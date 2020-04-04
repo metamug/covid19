@@ -59,7 +59,7 @@ const displayStateChart = () => {
     fetch('https://api.metamug.com/covid/v1.0/state/'+stateID).then(res=> res.json())
         .then(data=> {
             data.stateHistory.map(obj=>{
-                let createDate = moment(obj.create_at).format("MMM Do")
+                let createDate = moment(obj.create_at).format("MMM DD")
                 labels.push(createDate)
                 totalCuredCount.push(obj.cured_count)
                 totalIndCount.push(obj.cnf_ind_count)
