@@ -56,7 +56,11 @@ const displayStateChart = () => {
     totalForCount=[],
     totalDeathCount= [],
     totalConfirmedCount=[]
-    const totalCountEl = document.getElementById('latest')
+    const cnfCountEl = document.getElementById('cnf_count')
+    const deathCountEl = document.getElementById('death_count')
+    const cured_countEl = document.getElementById('cured_count')
+
+
     fetch('https://api.metamug.com/covid/v1.0/state/'+stateID).then(res=> res.json())
         .then(data=> {
             data.stateHistory.map(obj=>{
@@ -68,7 +72,10 @@ const displayStateChart = () => {
                 totalDeathCount.push(obj.death_count)
                 totalConfirmedCount.push(obj.cnf_ind_count + obj.cnf_for_count)
             })
-            totalCountEl.innerHTML += totalConfirmedCount[data.stateHistory.length -1]
+            cnfCountEl.innerHTML += totalConfirmedCount[data.stateHistory.length -1]
+            deathCountEl.innerHTML += totalDeathCount[data.stateHistory.length -1]
+            cured_countEl.innerHTML += totalCuredCount[data.stateHistory.length -1]
+
             const element = document.getElementById('state-chart-area')
             const ctx = element.getContext('2d');
             const myLineChart = new Chart(ctx, {
