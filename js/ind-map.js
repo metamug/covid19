@@ -82,6 +82,9 @@ const cnfCount = document.getElementById('cnf_count')
 const deathCount = document.getElementById('death_count')
 const curedCount = document.getElementById('cured_count')
 const totalCount = document.getElementById('total_count')
+const percentTotal = document.getElementById('percent-total')
+const percentDeath = document.getElementById('percent-death')
+const percentCured = document.getElementById('percent-cured')
 
 const fetchData = async () => {
 
@@ -98,12 +101,23 @@ await fetch("https://api.metamug.com/covid/v1.0/india")
                 totalConfirmedCount.push(obj.total_ind_count + obj.total_for_count)
             })
 
+            const percentIncrease = (current, previous) => {
+                let ratio = parseInt(previous) /parseInt(current)
+                return Math.round((1 - ratio)*100)
+            }
+
+            let currentObj = historicalCount[historicalCount.length-1]
+            let prevObj = historicalCount[historicalCount.length-2]
+
             if(historicalCount) {
                 const {total_for_count, total_ind_count, total_death_count, total_cured_count} =  historicalCount[historicalCount.length-1]
                 cnfCount.innerHTML = total_for_count + total_ind_count
                 totalCount.innerHTML = total_for_count + total_ind_count
                 deathCount.innerHTML = total_death_count
                 curedCount.innerHTML = total_cured_count
+                percentTotal.innerHTML = ' ⬆' + percentIncrease(totalConfirmedCount[totalConfirmedCount.length-1], totalConfirmedCount[totalConfirmedCount.length-2])+ '%'
+                percentDeath.innerHTML = ' ⬆' + percentIncrease(currentObj.total_death_count, prevObj.total_death_count)+ '%'
+                percentCured.innerHTML = ' ⬆' + percentIncrease(currentObj.total_cured_count, prevObj.total_cured_count)+ '%'
             }
 
             const getStateCode = (value) => {
@@ -282,7 +296,3 @@ await fetch("https://api.metamug.com/covid/v1.0/india")
     }
 
 fetchData()
-
-    
-    
-    

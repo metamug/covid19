@@ -1,0 +1,201 @@
+<head>
+    <meta charset="utf-8">
+    <title> 🦠😷 Coronavirus India State Wise Details</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get latest update about corona virus COVID-19 spread in india. Latest data from Ministry of Health and Family Welfare | Government of India">
+    <meta property="og:title" content="Coronavirus India State Wise Details">
+    <meta property="og:description" content="Get latest update about corona virus COVID-19 spread in india. ">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/-AcVMc-d8s_0/XnhFyx1pPtI/AAAAAAAAK2c/sUAVMkbunYInfRdowPBYY8pN185dMfBlgCK8BGAsYHg/s0/2020-03-22.png">
+    <meta property="og:site_name" content="Coronavirus India Update">
+    <meta property="og:url" content="https://corona-india.metamug.net">
+  <script data-ad-client="ca-pub-4723848227996463" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="/js/datamaps.none.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<style type="text/css">
+#india {
+          height: 600px;
+          width: 900px;
+          position: relative;
+      }
+
+      @media (max-width: 768px) {
+          #india {
+              height: 400px;
+              width: 340px;
+              position: relative;
+          }
+
+          h1{
+              font-size:20px;
+          }
+      }
+</style>
+
+
+<!-- <script src="/js/datamaps.ind.min.js"></script> -->
+
+<link rel="stylesheet" href="css/listing.css">
+
+<div class="container">
+  <br><br>
+  <div>
+
+      <h1  class="app-title mb-2" itemprop="name" >
+         🦠😷  Coronavirus India State Wise Details <span class="badge badge-warning" id="total_count">😷</span>
+      </h1>
+
+      <time itemprop="dateModified" datetime="" class="" id="time">
+        ⏰ <span style="color:#999" id="date">Mar 23, 2020 10:45PM </span>
+      </time>
+  </div>
+
+  <section>
+
+      <div id="india"></div>
+      <p>Hover or tap over the map to see details of cases in different indian states</p>
+  </section>
+
+  <div class="row mt-2 mb-2">
+
+      <div class="card col-md-4">
+        <div class="card-body">
+          <h2><span class="badge badge-warning" id="cnf_count">😷</span><span id="percent-total"></span> Confirmed</h2>
+        </div>
+      </div>
+
+      <div class="card col-md-4">
+        <div class="card-body">
+          <h2><span class="badge badge-danger" id="death_count" >😷</span><span id="percent-death"></span> Deaths</h2>
+        </div>
+      </div>
+
+      <div class="card col-md-4">
+        <div class="card-body">
+          <h2><span class="badge badge-success" id="cured_count">😷</span><span id="percent-cured"></span> Cured </h2>
+        </div>
+      </div>
+
+      <center class="mb-5">
+          Source: <a href="https://www.mohfw.gov.in/"> Ministry of Health and Family Welfare | GOI </a>
+      </center>
+
+      <div style="width: 100%;" class="mt-2">
+        <canvas id="myChart"></canvas>
+      </div>
+<!--
+    <div class="row">
+      <canvas id="lineChart" style="margin-bottom: 2em;margin-top: 5em;color: white"></canvas>
+    </div>
+
+    <div id="covid-container" style="position: relative; width: 500px; height: 300px;"></div>
+-->
+  </div>
+
+
+<script src="/js/modified-time.js"></script>
+<script src="/js/ind-map.js"></script>
+
+
+<!-- <h3 class="mt-5 mb-3">What is Coronavirus?</h3>
+<section class="embed-responsive embed-responsive-16by9">
+
+  <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/BtN-goy9VOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</section> -->
+
+<section class="mt-5 mb-5">
+
+    <h3>Virus Pathology</h3>
+
+        <p><!-- 	 -->An incubation period is the time between when you contract a virus and when your symptoms start. The average is around 5 days. But it can last up to 11 days. For many people, COVID-19 symptoms start as mild symptoms and gradually get worse over a few days.</p>
+
+        <img src="/img/virus-pathology-covid-19.PNG" class="img-fluid">
+
+</section>
+
+<section class="mb-5 mt-5">
+<H3>Suggested Behaviors</H3>
+
+  In order to minimize the spread of disease, suggested behavioral changes include:
+
+  <ul class="list-group">
+      <li class="list-group-item" >🚫🤦 Don't touch your face</li>
+      <li class="list-group-item" >🚫🤧🤲 Don't sneeze into hands</li>
+      <li class="list-group-item" >✅🤧💪 Do sneeze into your elbow</li>
+      <li class="list-group-item" >🧼🖐⏲ Wash your hands regularly, for at least 20 seconds</li>
+      <li class="list-group-item" >✅📦😌 If practical, have groceries and other items delivered to your home</li>
+      <li class="list-group-item" >🚫🛒😡 When using local shops, don't buy literally everything on the shelves. Leave enough for others 💕</li>
+  </ul>
+</section>
+
+
+</section>
+
+  <section>
+    <h3>Country and State Helpline</h3>
+    <div>Maximizing the efforts to contain the spread of novel Corona Virus (Covid-19), Ministry of Health & Family Welfare has provided these helpdivne numbers of States & Union Territories (UTs).</div>
+    <ul>
+
+      <li>National Helpline Number 1075  |  1800-112-545</li>
+      <li>Central Helpline Number +91-11-23978043  |  +91-11-23978046</li>
+      <li>Central Helpline Email ncov2019@gmail.com</li>
+    </ul>
+
+  </section>
+
+  <table class="table table-striped"><thead><tr><th style="width: 10%;">Sr.No</th><th style="width: 40%;">State</th><th style="width: 50%;">Helpline Number</th></tr></thead><tbody><tr><td>1</td><td>Andhra Pradesh</td><td><a target="_blank" href="tel:0866-2410978">0866-2410978</a></td></tr><tr><td>2</td><td>Arunachal Pradesh</td><td><a target="_blank" href="tel:9536055743">9536055743</a></td></tr><tr><td>3</td><td>Assam</td><td><a target="_blank" href="tel:6913347770">6913347770</a></td></tr><tr><td>4</td><td>Bihar</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>5</td><td>Chhattisgarh</td><td><a target="_blank" href="tel:077122-35091">077122-35091</a></td></tr><tr><td>6</td><td>Goa</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>7</td><td>Gujarat</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>8</td><td>Haryana</td><td><a target="_blank" href="tel:8558893911">8558893911</a></td></tr><tr><td>9</td><td>Himachal Pradesh</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>10</td><td>Jharkhand</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>11</td><td>Karnataka</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>12</td><td>Kerala</td><td><a target="_blank" href="tel:0471-2552056">0471-2552056</a></td></tr><tr><td>13</td><td>Madhya Pradesh</td><td><a target="_blank" href="tel:0755-2527177">0755-2527177</a></td></tr><tr><td>14</td><td>Maharashtra</td><td><a target="_blank" href="tel:020-26127394">020-26127394</a></td></tr><tr><td>15</td><td>Manipur</td><td><a target="_blank" href="tel:3852411668">3852411668</a></td></tr><tr><td>16</td><td>Meghalaya</td><td><a target="_blank" href="tel:9366090748">9366090748</a></td></tr><tr><td>17</td><td>Mizoram</td><td><a target="_blank" href="tel:102">102</a></td></tr><tr><td>18</td><td>Nagaland</td><td><a target="_blank" href="tel:7005539653">7005539653</a></td></tr><tr><td>19</td><td>Odisha</td><td><a target="_blank" href="tel:9439994859">9439994859</a></td></tr><tr><td>20</td><td>Punjab</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>21</td><td>Rajasthan</td><td><a target="_blank" href="tel:0141-2225624">0141-2225624</a></td></tr><tr><td>22</td><td>Sikkim</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>23</td><td>Tamil Nadu</td><td><a target="_blank" href="tel:044-29510500">044-29510500</a></td></tr><tr><td>24</td><td>Telangana</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>25</td><td>Tripura</td><td><a target="_blank" href="tel:0381-2315879">0381-2315879</a></td></tr><tr><td>26</td><td>Uttarakhand</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>27</td><td>Uttar Pradesh</td><td><a target="_blank" href="tel:18001805145">18001805145</a></td></tr><tr><td>28</td><td>West Bengal</td><td><a target="_blank" href="tel:3323412600">3323412600</a></td></tr></tbody></table>
+
+  <div style="margin-bottom: 2.5em;"></div>
+
+  <table class="table table-striped" id="union_territories"><thead><tr><th style="width: 10%;">Sr.No</th><th style="width: 40%;">Union Territory</th><th style="width: 50%;">Helpline Number</th></tr></thead><tbody><tr><td>1</td><td>Andaman and Nicobar Islands</td><td><a target="_blank" href="tel:03192-232102">03192-232102</a></td></tr><tr><td>2</td><td>Chandigarh</td><td><a target="_blank" href="tel:9779558282">9779558282</a></td></tr><tr><td>3</td><td>Dadra and Nagar Haveli and Daman &amp; Diu</td><td><a target="_blank" href="tel:104">104</a></td></tr><tr><td>4</td><td>Delhi</td><td><a target="_blank" href="tel:011-22307145">011-22307145</a></td></tr><tr><td>5</td><td>Jammu &amp; Kashmir</td><td><a target="_blank" href="tel:1912520982">1912520982</a><span>&nbsp; | &nbsp;</span><a target="_blank" href="tel:0194-2440283">0194-2440283</a></td></tr><tr><td>6</td><td>Ladakh</td><td><a target="_blank" href="tel:1982256462">1982256462</a></td></tr><tr><td>7</td><td>Lakshadweep</td><td><a target="_blank" href="tel:4896263742">4896263742</a></td></tr><tr><td>8</td><td>Puducherry</td><td><a target="_blank" href="tel:104">104</a></td></tr></tbody></table>
+
+
+   <!-- Test Centers -->
+   <section>
+     <h3>Indian Test Centers in States</h3>
+
+    <a href="https://icmr.nic.in/sites/default/files/upload_documents/Final_Government_Laboratories_Testing_2303.pdf">Government Laboratories Testing by Indian Council of Medical Research(ICMR)</a>
+
+   <div class="column col-12"><div style="margin-bottom:15px"><h5>Andhra Pradesh</h5><ul style="margin-bottom:5px"><li>Sri Venkateswara Institute of Medical Sciences in Tirupati</li><li>GMC, Anantapur</li><li>Siddhartha Medical College, Vijayawada</li><li>Ranagaraya Medical College, Kakinada</li></ul></div><div style="margin-bottom:15px"><h5>Andaman and Nicobar</h5><ul style="margin-bottom:5px"><li>Regional Medical Research Centre, Port Blair</li></ul></div><div style="margin-bottom:15px"><h5>Assam</h5><ul style="margin-bottom:5px"><li>Gauhati Medical College, Guwahati</li><li>Regional Medical Research Centre, Dibrugarh</li><li>Silchar Medical College, Silchar</li><li>Jorhat Medical College, Jorhat</li></ul></div><div style="margin-bottom:15px"><h5>Bihar</h5><ul style="margin-bottom:5px"><li>Rajendra Memorial Research Institute of Medical Sciences, Patna</li></ul></div><div style="margin-bottom:15px"><h5>Chandigarh</h5><ul style="margin-bottom:5px"><li>Post Graduate Institute of Medical Education &amp; Research</li></ul></div><div style="margin-bottom:15px"><h5>Chhattisgarh</h5><ul style="margin-bottom:5px"><li>AIIMS, Raipur</li></ul></div><div style="margin-bottom:15px"><h5>Delhi</h5><ul style="margin-bottom:5px"><li>AIIMS</li></ul></div><div style="margin-bottom:15px"><h5>Gujarat</h5><ul style="margin-bottom:5px"><li>BJ Medical College, Ahmedabad</li><li>M P Shah Government Medical College, Jamnagar</li></ul></div><div style="margin-bottom:15px"><h5>Haryana</h5><ul style="margin-bottom:5px"><li>Pt B D Sharma Post Graduate Institute of Medical Sciences, Rohtak</li><li>BPS Government Medical College, Sonipat</li></ul></div><div style="margin-bottom:15px"><h5>Himachal Pradesh</h5><ul style="margin-bottom:5px"><li>Indira Gandhi Medical College, Shimla</li><li>Dr Rajendra Prasad Government Medical College, Kangra, Tanda</li></ul></div><div style="margin-bottom:15px"><h5>Jammu-Kashmir</h5><ul style="margin-bottom:5px"><li>Sher-I-Kashmir Institute of Medical Sciences, Srinagar</li><li>Government Medical College, Jammu</li><li>Government Medical College, Srinagar</li></ul></div><div style="margin-bottom:15px"><h5>Jharkhand</h5><ul style="margin-bottom:5px"><li>MGM Medical College, Jamshedpur</li></ul></div><div style="margin-bottom:15px"><h5>Karnataka</h5><ul style="margin-bottom:5px"><li>Bangalore Medical College &amp; Research Institute, Bengaluru</li><li>National Institute of Virology Field Unit, Bengaluru</li><li>Mysore Medical College &amp; Research Institute, Mysore</li><li>Hassan Institute of Medical Sciences, Hassan</li><li>Shimoga Institute of Medical Sciences, Shivamoga</li></ul></div><div style="margin-bottom:15px"><h5>Kerala</h5><ul style="margin-bottom:5px"><li>National Institute of Virology Field, Kerala Unit</li><li>Government Medical College, Thriuvananthapuram</li><li>Government Medical College, Kozhikhode</li><li>Government Medical College, Thrissur</li></ul></div><div style="margin-bottom:15px"><h5>Madhya Pradesh</h5><ul style="margin-bottom:5px"><li>AIIMS, Bhopal</li><li>National Institute of Research in Tribal Health (NIRTH), Jabalpur</li></ul></div><div style="margin-bottom:15px"><h5>Maharashtra</h5><ul style="margin-bottom:5px"><li>Indira Gandhi Government Medical College, Nagpur</li><li>Kasturba Hospital for Infectious Diseases, Mumbai</li><li>NIV Mumbai Unit</li></ul></div><div style="margin-bottom:15px"><h5>Manipur</h5><ul style="margin-bottom:5px"><li>JN Institute of Medical Sciences Hospital, Imphal</li><li>Regional Institute of Medical Science, Imphal</li></ul></div><div style="margin-bottom:15px"><h5>Meghalaya</h5><ul style="margin-bottom:5px"><li>North Eastern Indira Gandhi Institute of Health and Medical Sciences, Shillong</li></ul></div><div style="margin-bottom:15px"><h5>Odisha</h5><ul style="margin-bottom:5px"><li>Regional Medical Research Centre, Bhubaneswar</li></ul></div><div style="margin-bottom:15px"><h5>Puducherry</h5><ul style="margin-bottom:5px"><li>Jawaharlal Institute of Postgraduate Medical Education &amp; Research, Puducherry</li></ul></div><div style="margin-bottom:15px"><h5>Punjab</h5><ul style="margin-bottom:5px"><li>Government Medical College, Patiala</li><li>Government Medical College, Amritsar</li></ul></div><div style="margin-bottom:15px"><h5>Rajasthan</h5><ul style="margin-bottom:5px"><li>Sawai Man Singh Hospital, Jaipur</li><li>Dr S N Medical College, Jodhpur</li><li>Jhalawar Medical College, Jhalawar</li><li>SP Medical College, Bikaner</li><li>RNT Medical college, Udaipur</li></ul></div><div style="margin-bottom:15px"><h5>Tamil Nadu</h5><ul style="margin-bottom:5px"><li>King’s Institute of Preventive Medicine &amp; Research, Chennai</li><li>Government Medical College, Theni</li><li>Tirunelveli Medical College, Tirunelveli</li><li>Government Medical College, Thiruvarur</li></ul></div><div style="margin-bottom:15px"><h5>Telangana</h5><ul style="margin-bottom:5px"><li>Gandhi Medical College, Secunderabad</li><li>Osmania Medical college, Hyderabad</li></ul></div><div style="margin-bottom:15px"><h5>Tripura</h5><ul style="margin-bottom:5px"><li>Government Medical College, Agartala</li></ul></div><div style="margin-bottom:15px"><h5>Uttar Pradesh</h5><ul style="margin-bottom:5px"><li>King George Medical University, Lucknow</li><li> Institute of Medical Sciences, Banaras Hindu University, Varanasi</li><li>Jawaharlal Nehru Medical College, Aligarh</li></ul></div><div style="margin-bottom:15px"><h5>Uttarakhand</h5><ul style="margin-bottom:5px"><li>Government Medical College, Haldwani</li></ul></div><div style="margin-bottom:15px"><h5>West Bengal</h5><ul style="margin-bottom:5px"><li>National Institute of Cholera and Enteric Diseases, Kolkata</li><li>IPGMER, Kolkata</li></ul></div></div>
+
+  </section>
+
+
+<section class="mb-5">
+<!-- <h3>Sources</h3> -->
+
+<!-- <a href="https://icmr.nic.in/sites/default/files/upload_documents/Final_Government_Laboratories_Testing_2303.pdf">Government Laboratories Testing by Indian Council of Medical Research(ICMR)</a>
+--><!-- <a href="https://www.mohfw.gov.in/"> Ministry of Health and Family Welfare | GOI </a> -->
+
+</section>
+
+
+  <footer>
+      <center>
+          Developed by <a href="https://metamug.com">Metamug</a> Technologies
+      </center>
+  </footer>
+
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script> -->
+<!-- <script src="/js/listing.js"></script> -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74759338-4"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-74759338-4');
+</script>
